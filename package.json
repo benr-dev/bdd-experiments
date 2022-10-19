@@ -1,0 +1,23 @@
+{
+  "name": "bdd-experiments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "test": "cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:benr-dev/bdd-experiments.git"
+  },
+  "author": "benr-dev",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^6.0.1",
+    "nx": "^15.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
