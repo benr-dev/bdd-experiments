@@ -1,11 +1,11 @@
 {
-  "name": "module-under-test",
+  "name": "module-containing-shared-steps",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "benr-dev",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/module-under-test.js",
+  "main": "lib/module-containing-shared-steps.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -13,11 +13,11 @@
   "files": [
     "lib"
   ],
-  "scripts": {
-    "test": "cucumber-js __tests__/features"
-  },
-  "devDpendencies": {
-    "module-conaining-shared-steps": "*",
+  "scripts": {},
+  "devDependencies": {
     "@cucumber/cucumber": "^8.7.0"
+  },
+  "peerDependencies": {
+    "@cucumber/cucumber": "^8"
   }
 }
