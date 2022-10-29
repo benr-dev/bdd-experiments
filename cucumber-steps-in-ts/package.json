@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "bdd": "lerna run bdd",
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "test": "lerna run test"

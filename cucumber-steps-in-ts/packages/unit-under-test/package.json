@@ -8,7 +8,7 @@
   "main": "dist/index.js",
   "directories": {
     "lib": "lib",
-    "test": "__tests__"
+    "test": "test"
   },
   "files": [
     "lib"
@@ -19,7 +19,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "bdd": "cucumber-js -p default"
   },
   "bugs": {
     "url": "https://github.com/benr-dev/bdd-experiments/issues"
