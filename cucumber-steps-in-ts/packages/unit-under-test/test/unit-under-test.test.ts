@@ -11,4 +11,9 @@ describe('unit tests', () => {
         const uut = new UnitUnderTest();
         expect(uut.doSomething()).toEqual('Did something');
     })
+
+    it('does something with a numeric parameter', () => {
+        const uut = new UnitUnderTest();
+        expect(uut.doSomethingWithThisNumber(10)).toEqual('Did something with 10');
+    })
 })

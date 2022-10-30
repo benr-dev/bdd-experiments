@@ -18,7 +18,7 @@
     "url": "git+https://github.com/benr-dev/bdd-experiments.git"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig-code.json",
     "test": "jest",
     "bdd": "cucumber-js -p default"
   },

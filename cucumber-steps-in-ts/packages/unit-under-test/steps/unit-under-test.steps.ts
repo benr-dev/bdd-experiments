@@ -12,13 +12,23 @@ export class UnitUnderTestSteps {
     this.unitUnderTest = new UnitUnderTest();
   }
 
-  @when(/it does something/)
+  @when(/it does something with no parameters/)
   public whenItDoesSomething() {
     this.result = this.unitUnderTest!.doSomething();
+  }
+
+  @when(/it does something with the number (\d*)/)
+  public whenItDoesSomethingWithTheNumber(num: number) {
+    this.result = this.unitUnderTest!.doSomethingWithThisNumber(num);
   }
 
   @then(/something happens/)
   public theSomethingHappens() {
     expect(this.result).to.equal('Did something');
+  }
+
+  @then(/it outputs '(.*)'/)
+  public itOutputs(str: string) {
+    expect(this.result).to.equal(str);
   }
 }
